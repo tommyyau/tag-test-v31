@@ -1,0 +1,58 @@
+.bp-backToTop {
+  background-color: var(--primary-color, #ff5c85);
+  border: none;
+  color: black;
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 15px;
+  bottom: 20px;
+  z-index: 2;
+  transform: perspective(1px) translateZ(0) translateX(100px);
+  transition: all .5s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    background: black;
+    transform: scaleY(0);
+    transform-origin: 0 100%;
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+  }
+
+  svg {
+    fill: black;
+    width: 24px;
+    height: 24px;
+    transition: all .5s;
+  }
+
+  &:hover {
+    &::before {
+      transform: scaleY(1);
+    }
+
+    svg {
+      fill: var(--primary-color, #ff5c85);
+    }
+  }
+
+  &.is-active {
+    transform: perspective(1px) translateZ(0) translateX(0);
+  }
+
+  &.is-hidden {
+    transform: perspective(1px) translateZ(0) translateX(100px);
+  }
+}

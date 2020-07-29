@@ -1,0 +1,49 @@
+.bp-notFound {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    padding: 64px;
+  }
+
+  &_title {
+    font-size: 6rem;
+    line-height: 1;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 16px;
+    background-image: url(/textclip.jpg);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 15s linear infinite;
+
+    @media (min-width: 768px) {
+      font-size: 20rem;
+    }
+  }
+
+  &_subTitle {
+    font-size: 1.5rem;
+    line-height: 1;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 16px;
+
+    @media (min-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position: left 0px top 30%;
+  }
+
+  40% {
+    background-position: left 800px top 30%;
+  }
+}

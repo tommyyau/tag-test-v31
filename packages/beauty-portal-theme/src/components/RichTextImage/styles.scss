@@ -1,0 +1,15 @@
+.bp-richtext {
+  &_image {
+    margin-bottom: 16px;
+
+    &>div {
+      margin-bottom: 0;
+    }
+
+    &-credit {
+      font-size: .75rem;
+      color: #333;
+      margin-top: 4px;
+    }
+  }
+}

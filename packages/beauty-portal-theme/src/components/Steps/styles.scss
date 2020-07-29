@@ -1,0 +1,54 @@
+.bp-step {
+  position: relative;
+  padding-left: 40px;
+  margin: 40px 0;
+
+  @media (min-width: 768px) {
+    padding-left: 100px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    counter-increment: step;
+    content: counter(step);
+    font-size: 3.125rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-top: -5px;
+    color: #fed760;
+
+    @media (min-width: 768px) {
+      font-size: 6.25rem;
+    }
+  }
+
+  &_reset {
+    counter-reset: step;
+    position: relative;
+    padding-left: 40px;
+    margin-top: 40px;
+
+    @media (min-width: 768px) {
+      padding-left: 100px;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      counter-increment: step;
+      content: counter(step);
+      font-size: 3.125rem;
+      font-weight: 600;
+      line-height: 1;
+      margin-top: -5px;
+      color: #fed760;
+
+      @media (min-width: 768px) {
+        font-size: 6.25rem;
+      }
+    }
+  }
+}

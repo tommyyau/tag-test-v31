@@ -1,0 +1,202 @@
+@import '~sanitize.css';
+
+@font-face {
+  font-family: Proxima Nova Alt;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('/fonts/ProximaNovaAltRegular.woff2') format('woff2'),
+    url('/fonts/ProximaNovaAltRegular.woff') format('woff'),
+    url('/fonts/ProximaNovaAltRegular.ttf') format('truetype');
+}
+@font-face {
+  font-family: Proxima Nova Alt;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url('/fonts/ProximaNovaAltBold.woff2') format('woff2'),
+    url('/fonts/ProximaNovaAltBold.woff') format('woff'),
+    url('/fonts/ProximaNovaAltBold.ttf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  color: #333;
+  margin: 0;
+  font-size: 100%;
+  font-family: 'Proxima Nova Alt', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.5rem;
+  line-height: 1.1;
+  color: black;
+}
+
+h2 {
+  font-size: 1.375rem;
+}
+
+@media (min-width: 960px) {
+  h2 {
+    font-size: 2.25rem;
+  }
+}
+
+iframe {
+  width: 100%;
+}
+
+button:focus,
+a:focus {
+  outline: 2px dashed #b8f0c0;
+}
+
+figure {
+  margin: 0;
+  position: relative;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.bp-image__placeholder {
+  position: relative;
+  display: block;
+}
+
+.bp-image__placeholder img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.srOnly {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+  height: 0.0625rem;
+  margin: -0.0625rem;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0.0625rem;
+  white-space: nowrap;
+}
+
+/* Responsive Container / GRID */
+.bp-container {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 1200px) {
+  .bp-container {
+    max-width: 1160px;
+  }
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.p0 {
+  padding: 0;
+}
+.pbx10 {
+  padding-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .pbx10 {
+    padding-bottom: 0;
+  }
+}
+.p20 {
+  padding: 20px;
+}
+.textCenter {
+  text-align: center;
+}
+/* COLUMNS GRID */
+.col-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.col,
+.col-xs-12 {
+  flex-grow: 0;
+  max-width: 100%;
+  flex-basis: 100%;
+}
+.col-xs-3 {
+  max-width: 25%;
+  flex-basis: 25%;
+}
+.col-xs-4 {
+  max-width: 33.333333%;
+  flex-basis: 33.333333%;
+}
+@media (min-width: 600px) {
+  .col-1 {
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .col-3 {
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .col-4 {
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .col-6 {
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .col-7 {
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .col-9 {
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+}
+.bp-preloader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bp-preloader svg path {
+  transform-origin: 0 0;
+  animation: spin 700ms linear infinite;
+}

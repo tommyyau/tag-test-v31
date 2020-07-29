@@ -1,0 +1,30 @@
+.bp-sitemap {
+  text-align: left;
+
+  &_title {
+    padding: 30px 0 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      background: #b8f0c0;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 100vw;
+      height: 20px;
+      z-index: -1;
+    }
+  }
+
+  .bp-list {
+    color: black;
+
+    &_link {
+      display: inline-block;
+      margin-bottom: 16px;
+      color: black;
+      text-decoration: underline;
+    }
+  }
+}

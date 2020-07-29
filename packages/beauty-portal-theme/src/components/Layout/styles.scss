@@ -1,0 +1,25 @@
+.bp-page {
+  margin-top: 60px;
+  overflow: hidden;
+}
+
+.bp-skipLink {
+  position: absolute;
+  padding: 4px;
+  z-index: 4;
+  color: black;
+  background: white;
+  border: .0625rem solid black;
+  white-space: nowrap;
+
+  &:not(:focus) {
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    pointer-events: none;
+  }
+}

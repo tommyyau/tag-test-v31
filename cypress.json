@@ -1,0 +1,15 @@
+{
+  "integrationFolder": ".",
+  "baseUrl": "${base.url}",
+  "video": true,
+  "screenshotsFolder": "cypress/screenshots",
+  "videosFolder": "cypress/videos",
+  "videoUploadOnPasses": true,
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "cypress/results",
+    "overwrite": false,
+    "html": false,
+    "json": true
+  }
+}

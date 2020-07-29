@@ -1,0 +1,29 @@
+.bp-diff {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  margin-top: 48px;
+
+  div {
+    margin-bottom: 0;
+  }
+
+  [data-rcs="root"] {
+    margin-bottom: 40px;
+  }
+
+  [data-rcs="main-handle-container"]>div {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background: url(/images/slide.svg) no-repeat center center;
+      background-size: contain;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      border-radius: 50%;
+    }
+  }
+}

@@ -1,0 +1,114 @@
+.bp-textBlock {
+  padding-bottom: 16px;
+  padding-top: 16px;
+  background-color: #f8e6de;
+  min-height: 212px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  h1 {
+    font-size: 1.875rem;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    @media (min-width: 768px) {
+      font-size: 2.875rem;
+    }
+  }
+
+  &_desc {
+    text-align: center;
+    margin: auto;
+    color: #333;
+
+    p {
+      font-size: .875rem;
+      margin: 0;
+
+      @media (min-width: 768px) {
+        font-size: 1.125rem;
+      }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: black;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    blockquote {
+      position: relative;
+      padding-top: 40px;
+      width: 80%;
+      margin: auto;
+
+      p {
+        font-style: italic;
+        font-size: 1.125rem;
+        position: relative;
+        font-weight: 400;
+        z-index: 1;
+
+        @media (min-width: 768px) {
+          font-size: 1.75rem;
+        }
+
+        span {
+          &:last-child {
+            font-size: 1rem;
+            color: black;
+          }
+        }
+      }
+
+      &::before {
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        content: "";
+        background-image: url('./quote-left.svg');
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+        background-position: center center;
+        background-color: #f8e6de;
+        height: 40px;
+        width: 40px;
+        transform: translateX(-50%);
+        z-index: 1;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        height: 2px;
+        background-color: var(--primary-color, #ff5c85);
+        z-index: 0;
+      }
+    }
+  }
+
+  &.typea {
+    background-color: #f8e6de;
+
+    p {
+      width: 80%;
+      margin: auto;
+    }
+  }
+}
