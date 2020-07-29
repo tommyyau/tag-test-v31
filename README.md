@@ -43,5 +43,5 @@ you can find more about specific commands inside package.json of studio or web f
 ## Authorize LightHouse Plugin with Github for PR Comments with Lighthouse Results:
 1. Navigate to https://github.com/apps/lighthouse-ci and click on install 
 2. Authorise (Need organisation admin access to add to organisation repo)
-3. Copy the LHCI_GITHUB_APP_TOKEN token on Authorisation page or **create a personal access token with repo:status scope
+3. Copy the LHCI_GITHUB_APP_TOKEN token on Authorisation page or **create a personal access token with repo:status scope**
 4. Add this Token to GitHub Secrets with key as LHCI_GITHUB_APP_TOKEN and value from step 3.
