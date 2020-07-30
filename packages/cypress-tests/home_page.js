@@ -33,7 +33,7 @@ context('Home page tests', () => {
     it('Text block is present', () => {
       cy.get('main')
         .wait(500)
-        .find('section.textblock-type1')
+        .find('section.typea')
         .should('be.visible')
     })
   })
@@ -42,17 +42,17 @@ context('Home page tests', () => {
     it('Text block is present and visible', () => {
       cy.get('main')
         .wait(500)
-        .find('section.textblock-type1')
+        .find('section.typea')
         .should('be.visible')
     })
   })
 
   describe('Image block (type a)', () => {
     it('Image block is present and visible', () => {
-      cy.get('main')
+      cy.get("main")
         .wait(500)
-        .find('section.imageblocktypea')
-        .should('be.visible')
+        .find("section.bp-imageBlock")
+        .should("be.visible");
     })
   })
 
@@ -60,16 +60,7 @@ context('Home page tests', () => {
     it('Image block is present and visible', () => {
       cy.get('main')
         .wait(500)
-        .find('section.imageblocktypeb')
-        .should('be.visible')
-    })
-  })
-
-  describe('Subscription form', () => {
-    it('Email form is present', () => {
-      cy.get('main')
-        .wait(500)
-        .find('section form[action="/newsletter"]')
+        .find('section.typeb')
         .should('be.visible')
     })
   })

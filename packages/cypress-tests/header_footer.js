@@ -8,8 +8,6 @@ context('Header and Footer', () => {
       cy.get('header')
         .find('div')
         .first()
-        .should('have.class', 'MuiContainer-root')
-        .and('be.visible')
         .find('nav')
         .should('be.visible')
         .find('ul')
@@ -33,8 +31,6 @@ context('Header and Footer', () => {
       cy.get('footer')
         .find('div')
         .first()
-        .should('have.class', 'c-social')
-        .and('be.visible')
         .find('ul')
         .should('be.visible')
         .find('li').within(() => {

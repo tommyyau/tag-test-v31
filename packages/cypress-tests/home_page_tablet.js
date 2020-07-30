@@ -32,7 +32,7 @@ context('Home page tests Tablet Tests', () => {
   describe('Text block', () => {
     it('Text block is present', () => {
       cy.get('main')
-        .find('section.textblock-type1')
+        .find('section.typea')
         .should('be.visible')
     })
   })
@@ -40,33 +40,24 @@ context('Home page tests Tablet Tests', () => {
   describe('Tile block', () => {
     it('Text block is present and visible', () => {
       cy.get('main')
-        .find('section.textblock-type1')
+        .find('section.typea')
         .should('be.visible')
     })
   })
 
   describe('Image block (type a)', () => {
     it('Image block is present and visible', () => {
-      cy.get('main')
-        .find('section.imageblocktypea')
-        .should('be.visible')
+      cy.get("main")
+        .find("section.bp-imageBlock")
+        .should("be.visible");
     })
   })
 
   describe('Image block (type b)', () => {
     it('Image block is present and visible', () => {
       cy.get('main')
-        .find('section.imageblocktypeb')
+        .find('section.typeb')
         .should('be.visible')
     })
   })
-
-  describe('Subscription form', () => {
-    it('Email form is present', () => {
-      cy.get('main')
-        .find('section form[action="/newsletter"]')
-        .should('be.visible')
-    })
-  })
-
 })

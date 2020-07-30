@@ -9,8 +9,6 @@ context('Header and Footer Mobile Tests', () => {
       cy.get('header')
         .find('div')
         .first()
-        .should('have.class', 'MuiContainer-root')
-        .and('be.visible')
         .find('span')
         .should('be.visible')
         .contains('Toggle Navigation')
@@ -39,8 +37,6 @@ context('Header and Footer Mobile Tests', () => {
       cy.get('footer')
         .find('div')
         .first()
-        .should('have.class', 'c-social')
-        .and('be.visible')
         .find('ul')
         .should('be.visible')
         .find('li').within(() => {
