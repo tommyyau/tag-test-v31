@@ -6,7 +6,7 @@
   bottom: 0;
   background: black;
   z-index: 1;
-  height: '0.1%';
+  height: 0.1%;
   transition: height .3s ease-in-out;
 
   @media (min-width: 768px) {
@@ -194,14 +194,14 @@
   &_subnav {
     overflow: hidden;
     transition: height .3s ease-in-out;
-    height: '0.1%';
+    height: 0.1%;
 
     @media (min-width: 768px) {
       position: absolute;
       top: 100%;
       left: 0;
       overflow: auto;
-      height: '0.1%';
+      height: 0.1%;
       background: black;
       min-width: 200px;
 
